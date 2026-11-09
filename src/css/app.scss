@@ -1,0 +1,19 @@
+// เราอยากจะ custom เอง
+// 1. สร้าง floder ไว้เก็บ font path: /css/fonts
+// 2. ตั้งค่า font-face
+// 3. สร้าง class หรือ กำหนดไว้ใน body เพื่อให้เป็น global
+// app global css
+@font-face {
+    // ตั้งชื่อ fonts ที่เอาเข้ามา
+    font-family: Itim;
+    // ที่อยู่ของไฟล์ font ตามด้วยไฟล์ .ttf
+    src: url(./fonts/Itim-Regular.ttf);
+}
+// สร้าง class เพื่อเอาไปเรียกใช้ได้
+.myFont{
+    font-family: 'Itim', sans-serif;
+}
+// หรือจะกำหนดแบบ global
+body {
+    font-family: 'Itim', sans-serif;
+}
